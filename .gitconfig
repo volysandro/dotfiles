@@ -1,0 +1,18 @@
+[user]
+	email = sandro@volery.com
+	name = volery
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[sendemail]
+from = Sandro Volery <sandro@volery.com>
+
+chainreplyto = false
+
+smtpencryption = tls
+smtppass = Dimisaen9-
+smtpserver = asmtp.mail.hostpoint.ch
+smtpserverport = 587
+smtpuser = sandro@volery.com
